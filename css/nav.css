@@ -1,0 +1,62 @@
+/* NEXTNAV */
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.nextnav {
+    /*max-width: 900px;*/
+    list-style-type: none;
+    /*margin: 0 auto;*/
+    padding: 0;
+    overflow: hidden;
+    /*background-color: lightgrey;
+    
+    width: 100%;*/
+}
+
+/* Float the list items side by side */
+ul.nextnav li {/*float: left;*/}
+
+/* Style the links inside the list items */
+ul.nextnav li a {
+    /*display: inline-block;*/
+    color: black;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: .9em;
+}
+
+/* Change background color of links on hover */
+ul.nextnav li a:hover {color: green;}
+
+/* Hide the list item that contains the link that should open and close the nextnav on small screens */
+ul.nextnav li.icon {display: none;}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the nextnav (li.icon) */
+@media screen and (max-width:500px) {
+  /*ul.nextnav li:not(:first-child) {display: none;}*/
+  ul.nextnav li {display: none;}
+  ul.nextnav li.icon {
+    /*float: right;*/
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the nextnav with JavaScript when the user clicks on the icon. This class makes the nextnav look good on small screens */
+@media screen and (max-width:500px) {
+  ul.nextnav.responsive {position: relative;}
+  ul.nextnav.responsive li.icon {
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 0;*/
+  }
+  ul.nextnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.nextnav.responsive li a {
+    display: block;
+    /*text-align: left;*/
+  }
+}

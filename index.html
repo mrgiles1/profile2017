@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+	<title>Daniel Giles Profile</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet"> 
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/jquery.lineProgressbar.css">
+	<!-- <link rel="stylesheet" href="css/nav.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+
+	<!-- <link rel="stylesheet" type="text/css" href="css/progress.css"> -->
+
+	<style>
+	body{
+    /*background: #3f51b5;*/
+    position:relative;
+    font-family: 'Ubuntu' , sans-serif;
+	}
+	.navbar, .dropdown-menu{
+	background: black;
+	border: none;
+
+	}
+
+
+
+	.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+	  border-bottom: 3px solid transparent;
+
+	}
+	.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	  border-bottom: 3px solid transparent;
+	  background: none;
+	}
+	.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .navbar-toggle{
+	 color: #fff;
+	}
+	.dropdown-menu{
+	      -webkit-box-shadow: none;
+	    box-shadow:none;
+
+
+	}
+
+	.nav li:hover:nth-child(8n+1), .nav li.active:nth-child(8n+1){
+	  border-bottom: #C4E17F 3px solid;
+	}
+	.nav li:hover:nth-child(8n+2), .nav li.active:nth-child(8n+2){
+	  border-bottom: #F7FDCA 3px solid;
+	}
+	.nav li:hover:nth-child(8n+3), .nav li.active:nth-child(8n+3){
+	  border-bottom: #FECF71 3px solid;
+	}
+	.nav li:hover:nth-child(8n+4), .nav li.active:nth-child(8n+4){
+	  border-bottom: #F0776C 3px solid;
+	}
+	.nav li:hover:nth-child(8n+5), .nav li.active:nth-child(8n+5){
+	  border-bottom: #DB9DBE 3px solid;
+	}
+	.nav li:hover:nth-child(8n+6), .nav li.active:nth-child(8n+6){
+	  border-bottom: #C49CDE 3px solid;
+	}
+	.nav li:hover:nth-child(8n+7), .nav li.active:nth-child(8n+7){
+	  border-bottom: #669AE1 3px solid;
+	}
+	.nav li:hover:nth-child(8n+8), .nav li.active:nth-child(8n+8){
+	  border-bottom: #62C2E4 3px solid;
+	}
+
+	.navbar-toggle .icon-bar{
+	    color: #fff;
+	    background: #fff;
+	}
+		/*body {*/
+			/*background-color: rgba(140, 114, 140, .1);*/
+			/*padding-top: 58px;*/
+		/*}*/
+
+		/*.navbar {
+*/
+
+			/*background-color: rgba(114, 22, 135, 0.9);*/
+			/*background-color: #76323F;
+			margin-bottom: 0;*/
+			/*padding: 20px 0 10px 0;
+			background-color: lightgreen;
+			text-decoration: none;*/
+		/*}*/
+
+		.aboutMe {
+			background-color: #283593;
+			color: white;
+			padding-top: 100px;
+			/*margin-top: 58px;*/
+			padding-bottom: 50px;
+		}
+
+		.aboutMe h2 {
+			font-family: 'Rokkitt', serif;
+
+		}
+
+		.aboutMe img {
+			border: 4px white solid;
+			border-radius: 5px;
+			margin-top: 30px;
+		}
+
+		.skills {
+			background-color: #E8EAF6;
+			/*background-image: url("http://placehold.it/800x800.jpg");*/
+			padding-top: 80px;
+			padding-bottom: 80px;
+			/*padding-bottom: 50px;*/
+		}
+
+		.skills h4 {
+			/*margin-top: -20px;*/
+		}
+
+		.skill-skill {
+			/*margin-top: 0;*/
+		}
+
+		.skill-image {
+			width: 50px;
+			/*padding-bottom: 10px;*/
+			/*margin-bottom: 20px;*/
+		}
+
+		.skill-text {
+			min-height: 70px;
+			/*text-align: justify;*/
+		}
+
+		.progressbars {
+			margin-top: 10px;
+			padding-top: 10px;
+		}
+
+		.education {
+			color: white;
+			background-color: #3F51B5;
+			padding-top: 80px;
+			padding-bottom: 80px;
+
+		}
+
+	
+
+		.education img {
+			-webkit-box-shadow: 5px 5px 5px #111;
+          	box-shadow: 5px 5px 5px #111;
+          	cursor: pointer;
+          	width: 200px;
+          	/*background-color: white;*/
+          	-webkit-filter: brightness(100%);
+
+		}
+
+			.education img:hover {
+			/*opacity: 0.6;*/
+			/*-webkit-filter: brightness(40%);*/
+			-webkit-filter: brightness(120%);
+  			-webkit-transition: all .3s ease;
+     		-moz-transition: all .3s ease;
+       		-o-transition: all .3s ease;
+     		-ms-transition: all .3s ease;
+          	transition: all .3s ease;
+		}
+
+	/*	.education img:hover {
+				-webkit-transition: 1.5s ease-in-out;
+  			transition: 1.5s ease-in-out;
+  			width: 225px; 
+		}*/
+
+		.portfolio {
+			color: white;
+			background-color: #212121;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		} 
+
+		* {
+  			-webkit-box-sizing: border-box;
+     		-moz-box-sizing: border-box;
+      		-ms-box-sizing: border-box;
+          	box-sizing: border-box;
+		}
+
+		.portfolio img {
+			border: 4px white solid;
+			border-radius: 5px;
+			overflow: hidden;
+			
+			-webkit-filter: brightness(75%);
+  			-webkit-transition: all .3s ease;
+     		-moz-transition: all .3s ease;
+       		-o-transition: all .3s ease;
+     		-ms-transition: all .3s ease;
+          	transition: all .3s ease;
+
+          	/*  -webkit-filter: blur(1px);
+  			filter: blur(1px);
+  			-webkit-transition: .3s ease-in-out;
+  			transition: .3s ease-in-out;*/
+
+          	-webkit-box-shadow: 5px 5px 5px #111;
+          	box-shadow: 5px 5px 5px #111;  
+
+
+			margin-top: 50px;
+
+		}
+
+
+
+		.portfolio img:hover {
+			-webkit-filter: brightness(120%);
+			/* -webkit-filter: blur(0);
+  			filter: blur(0);*/
+			
+			
+
+		}
+
+	/*	.grow:hover {
+			width: 300px;
+			height: 300px;
+		}*/
+
+		.contact {
+			background-color: white;
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		/*textarea {
+			height: 250px;
+		}*/
+
+		.anchor {
+			display: block;
+			/*height: 40px;*/
+			margin-top:0;
+			visibility: hidden;
+
+		}
+
+		.footer {
+			padding-top: 10px;
+			font-size: 1.2em;
+			height: 50px;
+			background-color: rgba(0,0,0,1);
+			color: white;
+
+		}
+
+		
+	</style>
+
+	<script type="text/javascript">
+
+	// Nav Test
+		function myFunction() {
+	    	var x = document.getElementById("myNextnav");
+	    	if (x.className === "nextnav") {
+	       		x.className += " responsive";
+	    	} else {
+	       	 x.className = "nextnav";
+	    	}
+		}
+
+
+
+	</script>
+
+</head>
+
+<body>
+	<!--  Nav test RAINBOW-->
+	<div class="navbar-wrapper">
+    <div class="container-fluid">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="font-family: 'Rokkitt'; font-size: 2em;">danielwebdev</a>
+                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav pull-right">
+                    	<li class="active"><a id="ablink" href="#about" class="active">About</a></li>
+                        <li class=""><a id="sklink" href="#skills" class="">Skills</a></li>
+                        <li class=""><a id="edlink" href="#education" class="">Education</a></li>
+                        <li class=""><a id="prlink" href="#portfolio" class="">Projects</a></li>
+                        <li class=""><a id="colink" href="#contact" class="">Contact</a></li>
+                        <li class=""><a id="" href="mailto:info@danielwebdev.com" class="" ><span  style="font-family: ubuntu;"> info@danielwebdev.com</span></a></li>
+
+                    </ul>
+                    <!-- <div class="email">info@danielwebdev.com</div> -->
+                </div>
+
+                
+            </div>
+        </nav>
+    </div>
+    
+</div>
+
+
+
+<span class="anchor" id="about"></span>
+<div class="aboutMe">
+
+	<!-- ABOUT ME -->
+
+	
+
+	<section class=" container" id="">
+
+		<div class="row">
+
+			<div class="col-sm-4">
+
+				<img style=""class="img-responsive img-default" src="images/daniel02.png">
+			</div>
+
+			<div class="col-sm-8" style="padding-top: 10px">
+				<h2 style="color: white; font-size: 2.5em; text-shadow: 1px 1px #000000;"><strong>Daniel Giles</strong></h2>
+							
+							<p style="font-size:1.7em">Educator / Web Developer</p>
+							<p>Front-end Devolper, Editor-in-chief at Eyes of Rome</p>
+							<p>English Professor at Universita RomaTre</p>
+							<p>Master's Degree in English Language Teaching (TESOL)</p>
+							<p>15 Years' experience teaching and learning languages</p>
+						
+
+			</div>
+
+
+		</div>
+	
+	</section>
+
+
+</div>
+
+		
+
+	<span class="anchor" id="skills"></span>
+		
+		<section class="skills container-fluid" id="">
+
+		<div class="container">
+
+			<h1 class="page-header">Skills</h1>
+
+<!-- Skills Test Begin -->
+	<div class="row">
+		<div class="col-sm-4">
+		
+				
+				<div class="" style="font-size:1.3em">HTML5</div><br>
+				<!-- <img style="float:left; overflow: auto; height:80px; padding: 0px 25px 10px 0;"class="img-responsive" src="images/html502.png"> -->
+				<div class="skill-text">
+
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/html502.png">Extensive experience creating HTML documents from scratch and editing existing HTML documents to fix bugs and fufill client requests</p>
+				</div>
+
+				<div class="progressbar1"></div>
+
+				
+			
+			
+		</div>
+		
+		<div class="col-sm-4">
+
+					<div class="" style="font-size:1.3em">CSS3</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/css302.png">Experience with external, internal, and inline CSS to achieve client design requests and create common simple applications such as carousels</p>
+				</div>
+
+				<div class="progressbar2"></div>
+
+			
+		</div>
+			
+		<div class="col-sm-4">
+		
+					<div class="" style="font-size:1.3em">JavaScript</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/javascript02.png">Experience using JavaScript to create and run simple web applications such as carousels, accordions, drop-down menus and other effects</p>
+				</div>
+
+				<div class="progressbar3"></div>
+
+		</div>
+
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-sm-4">
+		
+				<div class="" style="font-size:1.3em">Photoshop</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/photoshop02.png">Extensive experience using Photoshop to perform all aspects of photo manipulation- from implementation on the web to performing touch-ups and creating art</p>
+				</div>
+
+				<div class="progressbar7"></div>
+				
+			
+			
+		</div>
+		
+		<div class="col-sm-4">
+
+				<div class="" style="font-size:1.3em">Joomla</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/joomla-logo.png">Experience using Joomla to prepare and implement webpage templates for repeated use, with minor editing, for websites, blogs, and online stores </p>
+				</div>
+
+				<div class="progressbar8"></div>
+
+			
+
+				
+
+			
+		</div>
+			
+		<div class="col-sm-4">
+
+				<div class="" style="font-size:1.3em">Zendesk</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/zendeskLogo02.png">Extensive experience as a Zendesk Admin, implementing the software to handle email and integrate communications into a single channel for agents</p>
+				</div>
+
+				<div class="progressbar9"></div>
+		
+
+		</div>
+
+
+	</div>
+
+	<div class="row">
+		
+		<div class="col-sm-4">
+		
+				<div class="" style="font-size:1.3em">jQuery</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/jquery02.png">Experience using jQuery to simplify JavaScript code as well as apply common effects making webpages more beautiful and user-friendly</p>
+				</div>
+
+				<div class="progressbar4"></div>
+				
+				
+			
+			
+		</div>
+		
+		<div class="col-sm-4">
+
+				<div class="" style="font-size:1.3em">PHP</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/php02.png">Limited yet growing experience with PHP to collect form data from users, update JSON files and use data on server to update HTML and page content</p>
+				</div>
+
+				<div class="progressbar5"></div>
+			
+		</div>
+			
+		<div class="col-sm-4">
+		
+				<div class="" style="font-size:1.3em">Java</div><br>
+				
+				<div class="skill-text">
+					<p><img style="float:left; overflow: auto; height:80px; padding: 0px 10px 10px 0;"class="img-responsive" src="images/java02.png">Limited yet growing experience using Java to create simple applications for Android devices in conjuction with XTML and Android Studio software</p>
+				</div>
+
+				<div class="progressbar6"></div>
+
+		</div>
+
+
+	</div>
+<!-- Skills Test End -->
+
+
+
+		</section>
+
+		<!-- END CONTAINER -->
+		</div>
+
+<!-- Education Test -->
+
+
+
+<!-- Education Test End -->
+
+		<span class="anchor" id="education" name="education"></span>
+
+		<!-- Education -->
+		<section class="education container-fluid" id="">
+
+
+			<div class="container">
+
+				<h1 class="text-left page-header">Education</h1>
+
+				<!-- SCHOOL 1 -->
+				<div class="row">
+
+					<div class="col-md-4">
+						<a href="https://www.academyart.edu/" target="_blank"><img class="img-circle img-responsive img-default"src="images/aaulogo2.png"></a>
+					</div>
+					<div class="col-md-8">
+						<h2>Academy of Art University</h2>
+						<h3>San Francisco, California</h3>
+						<h4><em>2014-2016</em></h4>
+						<p>Web Development Support Instructor</p>
+						<p>Web Development Study Group Leader</p>
+						<p>English Professor</p>
+						
+					</div>
+
+					
+
+				</div>
+
+				<hr>
+				<!-- SCHOOL 2 -->
+				<div class="row">
+
+					<div class="col-md-4">
+						<a href="http://english.sfsu.edu/content/ma-tesol-program" target="_blank"><img class="img-circle img-responsive"src="images/sfsu02.png"></a>
+					</div>
+					<div class="col-md-8">
+						<h2>San Francisco State University</h2>
+						<h3>San Francisco, California</h3>
+						<h4><em>2009-2012</em></h4>
+						<p>Master's Degree in English: Teaching English to Speakers of Other Languages</p>
+						<p>Certificate in Teaching English University Writing </p>
+					</div>
+
+					
+
+				</div>
+
+				<hr>
+				<!-- SCHOOL 3 -->
+				<div class="row">
+
+					<div class="col-md-4 edimg">
+						<a href="http://www.csuchico.edu/" target="_blank"><img class="img-circle img-responsive"src="images/chico02.png"></a>
+					</div>
+					<div class="col-md-8">
+						<h2>California State University, Chico</h2>
+						<h3>Chico, California</h3>
+						<h4><em>1999-2005</em></h4>
+						<p>Bachelor's in Spanish</p>
+						<p>Participant: International Programs - Granada, Spain 2003/2004</p>
+						
+					</div>
+
+					
+
+				</div>
+
+			<!-- END CONTAINER -->
+			</div>
+
+		</section>
+
+		<!-- Portfolio -->
+		<span class="anchor" id="portfolio"></span>
+
+		<section class="portfolio" id="">
+
+			<div class="container">
+
+				<h1 class="page-header">Projects</h1>
+
+				<div class="row">
+
+					<div class="col-sm-4 text-center grow pic">
+						
+						<a href="images/eyesOfRome.png" data-lightbox="projects" data-title="Eyes of Rome Guide Profile"><img src="images/eyesOfRome-thumb.png"></a>
+
+						<p><br><a href="https://eyesofrome.com/our-team/azzurra" target="_blank">Eyes of Rome Guide Profile</a></p>
+
+					</div>
+
+					<div class="col-sm-4 text-center">
+
+						<a href="images/eor-diaries.png" data-lightbox="projects" data-title="Eyes of Rome Diaries"><img src="images/eor-diaries-thumb.png"></a>
+
+						<p><br><a href="https://eyesofrome.com/diaries/32-all-diaries/elisa/93-the-mythology-of-your-star-sign" target="_blank">Eyes of Rome Diary Entry</a></p>
+
+					</div>
+					<div class="col-sm-4 text-center">
+
+						<a href="images/eyesofromeRest01.png" data-lightbox="projects" data-title="Eyes of Rome Zendesk Help Center Article"><img src="images/eyesofromeRest01-thumb.png"></a>
+
+						<p><br><a href="https://support.eyesofrome.com/hc/en-us/articles/115000559569-The-Best-RESTAURANTS-in-Rome" target="_blank">Eyes of Rome Help Center Article</a></p>
+
+						
+					</div>
+				
+
+				</div>
+
+				<br>
+
+				<div class="row text-center">
+					<div class="col-sm-4">
+
+						<a href="images/elon-quote-generator.png" data-lightbox="projects" data-title="Elon Musk Quote Generator"><img src="images/elon-quote-generator-thumb.png"></a>
+
+						<p><br><a href="http://danielwebdev.com/quotegen/quotegen01.html" target="_blank">Elon Musk Quote Generator</a></p>
+					
+					</div>
+
+					<div class="col-sm-4">
+
+						<a href="images/tarotCard02.png" data-lightbox="projects" data-title="Photoshop Tarot Card Project"><img src="images/tarotCard02-thumb.png"></a>
+
+						<p><br><a href="images/tarotCard02.png" target="_blank">Open Image in a new tab</a></p>
+					
+					</div>
+
+					<div class="col-sm-4">
+
+						<a href="images/artemis01.png" data-lightbox="projects" data-title="Photoshop Mythology Project"><img src="images/artemis01-thumb.png"></a>
+
+						<p><br><a href="images/artemis01.png" target="_blank">Open Image in a new tab</a></p>
+
+					</div>
+
+					
+					
+
+					
+
+			
+
+				</div>
+
+
+
+			</div>
+		</section>
+
+		<!-- CONTACT ME -->
+
+		<span class="anchor" id="contact"></span>
+		<section class="contact" id="">
+
+			<div class="container">
+
+				<h1 class="page-header">Contact Me</h1>
+
+			
+
+				<div class="row">
+
+					<div class="col-md-6">
+						<h4 class="text-left">Please leave a message:</h4>
+						<form>
+						  <div class="form-group">
+						    <label for="exampleInputEmail1">Full Name</label>
+						    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name">
+						  </div>
+						  <div class="form-group">
+						    <label for="exampleInputPassword1">Email Address</label>
+						    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email Address">
+						  </div>
+						  <div class="form-group">
+							<textarea class="form-control" rows="10" placeholder="Your Message"></textarea>
+						  </div>
+						  <button type="submit" class="btn btn-default">Submit</button>
+
+						</form>
+
+						<hr>
+					</div>
+
+					
+
+					<div class="col-md-6">
+						<div class="row">
+				
+
+
+							<div class="col-sm-12 text-center">
+								<h4 class="text-left">Or connect via:</h4>
+
+								<br>
+								<a href="mailto:info@danielwebdev.com" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-envelope"></span>  Email</a>
+								<br>
+								<br>
+								<a href="#" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-star-empty"></span>  Twitter</a>
+
+							</div>
+			
+						</div>
+							<br>
+
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<a href="#" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-globe"></span> LinkedIn</a>
+
+				</div>
+			</div>
+
+
+			<br>
+
+			<div class="row">
+				<div style="padding-bottom: 50px;"class="col-md-12 text-center">
+
+					<a href="#" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-tree-conifer"></span> CodeCamp</a>
+
+				</div>
+			</div>
+					</div>
+			</div>
+
+			<!-- container div -->
+			</div>
+
+			</div>
+		</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center">
+
+<p>Copyright 2017 by Daniel Web Development - Private Enterprise - All Rights Reserved</p>
+
+</footer>
+
+
+
+
+
+		<!-- Scripts -->
+
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/jquery.lineProgressbar.js"></script>
+<script>
+
+	$(document).ready(function() {
+    
+		// $("img").css("max-height: 300");
+		
+
+		// progress bars!
+
+		$(".progressbar1").LineProgressbar({
+			percentage: 90,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#3f51b5',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+
+		$(".progressbar2").LineProgressbar({
+			percentage: 80,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#3f51b5',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+	
+		$(".progressbar3").LineProgressbar({
+			percentage: 65,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#7986cb',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+	
+		$(".progressbar4").LineProgressbar({
+			percentage: 65,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#7986cb',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+	
+		$(".progressbar5").LineProgressbar({
+			percentage: 55,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#7986cb',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+	
+		$(".progressbar6").LineProgressbar({
+			percentage: 45,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#c5cae9',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+	
+		$(".progressbar7").LineProgressbar({
+			percentage: 85,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#3f51b5',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+	
+		$(".progressbar8").LineProgressbar({
+			percentage: 65,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#7986cb',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+	
+		$(".progressbar9").LineProgressbar({
+			percentage: 75,
+			ShowProgressCount: true,
+			duration: 5000,
+			fillBackgroundColor: '#3f51b5',
+			backgroundColor: '#ffffff',
+			radius: '20px',
+			height: '30px',
+			width: '100%',
+
+		});
+
+		// Scrollspy
+	$('body').scrollspy({ target: '#navbar' })
+
+	// $('#navbar').on('activate.bs.scrollspy', function () {
+
+	// })
+
+		
+	
+
+		//END DOCUMENT READY 
+});
+
+
+
+</script>
+
+<script src="js/lightbox.min.js"></script>
+
+<script>
+
+ lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'alwaysShowNavOnTouchDevices':true
+    })
+
+</script>
+
+<!-- <script src="js/jquery.scrollme.min"></script> -->
+
+<!-- ANCHOR SCROLL TEST -->
+<script>
+
+// ANCHOR SMOOTH SCROLL
+// $("#ablink, #sklink, #edlink, #prlink, #colink").click(function(){
+//     $('html, body').animate({
+//         scrollTop: $( $(this).attr('href') ).offset().top
+//     }, 900);
+//     return false;
+// });
+
+$("#ablink, #sklink, #edlink, #prlink, #colink").click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 500);
+    return false;
+});
+//NAVBAR COLLAPSE ALLIGN CENTER
+$( document ).ready(function() {
+
+	if(".data('aria-expanded')"==false){
+		
+		$("ul").addClass("pull-right");
+		
+	}  else {
+		$("ul").removeClass("pull-right");
+	} 
+});
+$( document ).ready(function() {
+
+	
+});
+
+
+
+
+</script>
+
+</body>
+</html>
