@@ -310,7 +310,7 @@
                         <li class=""><a id="edlink" href="#education" class="">Education</a></li>
                         <li class=""><a id="prlink" href="#portfolio" class="">Projects</a></li>
                         <li class=""><a id="colink" href="#contact" class="">Contact</a></li>
-                        <li class=""><a id="" href="mailto:info@danielwebdev.com" class="" ><span  style="font-family: ubuntu;"> info@danielwebdev.com</span></a></li>
+                        <li class=""><a id="" href="mailto:info@danielwebdev.com" class="" ><span  style="font-family: ubuntu;">danielevan.giles@uniroma3.it</span></a></li>
 
                     </ul>
                     <!-- <div class="email">info@danielwebdev.com</div> -->
@@ -781,13 +781,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/jquery.lineProgressbar.js"></script>
 <script>
+$(document).ready(function() {
 
-	$(document).ready(function() {
-    
-		// $("img").css("max-height: 300");
-		
 
-		// progress bars!
+// progress bars!
 
 		$(".progressbar1").LineProgressbar({
 			percentage: 90,
@@ -897,17 +894,9 @@
 
 		});
 
-		// Scrollspy
-	$('body').scrollspy({ target: '#navbar' })
+// Scrollspy
+$('body').scrollspy({ target: '#navbar' })
 
-	// $('#navbar').on('activate.bs.scrollspy', function () {
-
-	// })
-
-		
-	
-
-		//END DOCUMENT READY 
 });
 
 
@@ -926,18 +915,8 @@
 
 </script>
 
-<!-- <script src="js/jquery.scrollme.min"></script> -->
-
 <!-- ANCHOR SCROLL TEST -->
 <script>
-
-// ANCHOR SMOOTH SCROLL
-// $("#ablink, #sklink, #edlink, #prlink, #colink").click(function(){
-//     $('html, body').animate({
-//         scrollTop: $( $(this).attr('href') ).offset().top
-//     }, 900);
-//     return false;
-// });
 
 $("#ablink, #sklink, #edlink, #prlink, #colink").click(function(){
     $('html, body').animate({
